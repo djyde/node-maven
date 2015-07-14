@@ -1,14 +1,17 @@
 {
   "name": "node-maven",
   "version": "0.0.1",
-  "description": "Getting maven central url easily.",
+  "description": "Getting maven repo url easily.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "maven": "./bin/cli"
+  },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/djyde/node-maven.git"
+    "url": "https://github.com/djyde/node-maven.git"
   },
   "keywords": [
     "maven",
@@ -19,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/djyde/node-maven/issues"
   },
-  "homepage": "https://github.com/djyde/node-maven#readme"
+  "homepage": "https://github.com/djyde/node-maven#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.8.1",
+    "copy-paste": "^1.1.2",
+    "moment": "^2.10.3",
+    "superagent": "^1.2.0"
+  }
 }

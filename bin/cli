@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var program = require('commander')
+    ,fs = require('fs')
+    ,path = require('path')
+    ,api = require('../libs/api')
+
+
+program
+  .version(JSON.parse(fs.readFileSync(path.join(__dirname,'../package.json'))).version)
+
+program
+  .command('search <keyword>')
+  .description('Search maven repos by keyword')
+  .action(function(keyword){
+    api.search(keyword);
+  })
+
+program.parse(process.argv);
