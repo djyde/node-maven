@@ -25,7 +25,7 @@ $ maven search <keyword>
 
 Then you will get a list of search results.
 
-`Enter` to copy the maven library url to clipboard.
+`Enter` to copy the maven library url (the latest version) to clipboard.
 
 `Backspace` to get out of list.
 
