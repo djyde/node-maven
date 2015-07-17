@@ -1,6 +1,6 @@
 {
   "name": "node-maven",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Getting maven repo url easily.",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "commander": "^2.8.1",
     "copy-paste": "^1.1.2",
     "moment": "^2.10.3",
-    "superagent": "^1.2.0"
+    "superagent": "^1.2.0",
+    "term-list": "^0.2.1"
   }
 }
